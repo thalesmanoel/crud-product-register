@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  display: flex;
+}
+
+button{
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(0, 0, 178);
+}
+

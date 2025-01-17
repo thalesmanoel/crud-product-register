@@ -1,0 +1,29 @@
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>NOME</th>
+          <th>VALOR
+            <button (click)="ordenarPorPreco()">Ordenar ▼</button>
+          </th>
+          <th>AÇÕES</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (produto of lista; track $index) {
+        <tr>
+          <td>{{produto.name}}</td>
+          <td>R${{produto.price}}</td>
+          <td class="btn-edit-delete">
+            <button type="button" (click)="edit(produto)">Editar</button>
+            <button type="button" class="delete" (click)="deleteById(produto.id)">Deletar</button>
+          </td>
+        </tr>
+      }
+      </tbody>
+    </table>
+
+
+
+    <button [routerLink]="['/cadastro']" routerLinkActive="router-link-active" >Adicionar produto</button>
+  </div>
